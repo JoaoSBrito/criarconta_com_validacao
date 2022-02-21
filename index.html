@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <link rel="stylesheet" href="assets/style.css" />
+  <body>
+    <section class="container">
+      <div class="title">
+        <h2>Criar Conta</h2>
+        <div class="logo">
+          <img src="assets/GitHub-Logo.png" alt="" />
+        </div>
+      </div>
+
+      <form class="form" id="form">
+        <div class="form-box">
+          <label for="username">Nome de Usuario</label>
+          <input type="text" id="username" placeholder="Exemplo123" />
+          <i class="icon-check-alt"></i>
+          <i class="icon-notice"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-box">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="exemplo@exemplo.com" />
+          <i class="icon-check-alt"></i>
+          <i class="icon-notice"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-box">
+          <label for="password">Senha</label>
+          <input type="password" id="password" placeholder="Insira sua Senha" />
+          <i class="icon-check-alt"></i>
+          <i class="icon-notice"></i>
+          <small>Error message</small>
+        </div>
+
+        <div class="form-box">
+          <label for="confirmPassword">Confirme sua senha</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            placeholder="Confime sua senha"
+          />
+          <i class="icon-check-alt"></i>
+          <i class="icon-notice"></i>
+          <small>Error message</small>
+        </div>
+
+        <button type="submit">cadastrar</button>
+
+        <p>Já Possui uma conta ? <a href="">Clique aqui</a></p>
+      </form>
+    </section>
+    <script src="main.js"></script>
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>

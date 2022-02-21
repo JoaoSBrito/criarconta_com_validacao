@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #010409;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+  border: 0;
+}
+
+.container {
+  background-color: #161b22;
+  border-radius: 1.4rem;
+  border: 2px solid #3e445b;
+  width: 29rem;
+  max-width: 100%;
+  border: none;
+  color: #b9bbbe;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.title h2 {
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+form {
+  padding: 0 40px;
+  /* margin-top: 10px; */
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+form input {
+  width: 100%;
+  height: 2.7rem;
+  border-radius: 0.4rem;
+  border: none;
+  padding-left: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.form-box {
+  position: relative;
+}
+
+.container i {
+  position: absolute;
+  top: 52px;
+  right: 12px;
+  visibility: hidden;
+}
+
+.icon-notice {
+  font-size: 24px;
+}
+
+.icon-check-alt {
+  font-size: 20px;
+}
+.container small {
+  visibility: hidden;
+  position: absolute;
+  top: 90px;
+  left: 5px;
+  color: #db5a5a;
+}
+
+/* VALIDAÇAO / ESTILIZAÇÃO DA VALIDAÇÃO */
+
+.form-box.success input {
+  border: 2px solid #4eca64;
+}
+
+.form-box.error input {
+  border: 2px solid #db5a5a;
+}
+
+.form-box.success i.icon-check-alt {
+  color: #4eca64;
+  visibility: visible;
+}
+
+.form-box.error i.icon-notice {
+  color: #db5a5a;
+  visibility: visible;
+}
+
+.form-box.error small {
+  visibility: visible;
+}
+
+/* =============================================*/
+
+label {
+  display: inline-block;
+  padding: 1rem 0 0 0;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 5px;
+
+  /* margin-top: 5px; */
+  /* margin-bottom: 15px; */
+}
+
+button {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-radius: 0.4rem;
+  border: none;
+  width: 100%;
+  height: 2.7rem;
+
+  background-color: #5568fe;
+  color: #fff;
+
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+p {
+  font-family: 'Inter', sans-serif;
+  /* font-weight: 500; */
+  margin-top: 20px;
+  text-align: center;
+}
+
+p a {
+  color: #5568fe;
+}
